@@ -61,28 +61,5 @@ def Make_lilarray(datei,patchsize,duration):
 		spike_array.append(t_s)
 		spike_array.append(t_s2)
 		
-	#Überprüfen --> erhöht erst Y dann X
-	'''
-	print('Start-X:')
-	print(x_start+1)
-	print('Start-Y:')
-	print(y_start+1)
-	print('SPIKE SOURCE ARRAY 1x1xON:')
-	print(spike_array[0])
-	print('SPIKE SOURCE ARRAY 1x1xOFF:')
-	print(spike_array[1])
-	print('SPIKE SOURCE ARRAY 1x2xON:')
-	print(spike_array[2])
-	print('SPIKE SOURCE ARRAY 1x2xOFF:')
-	print(spike_array[3])
-	print('Länge des Arrays:')
-	print(len(spike_array))
-	'''
-	#Ausgabe
 	return(spike_array, x_start, y_start)
-
-#MAIN
-if __name__ == '__main__':
-	for file in glob.glob('events/Test/0/00002.npz'):
-		Make_lilarray(file,12,350)
 		
