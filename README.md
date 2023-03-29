@@ -62,7 +62,7 @@ The corruption is presented on different levels to the network, including a corr
 An *output_svm* directory is created, where the activity on the training set is saved, and in corresponding subdirectories the activities on the test set with a certain level of corruption.
 
 3. To evaluate the classification robustness with respect to a certain corruption use start the *svm.py* script.
-It first fitts a support-vector machine with the network activities on the N-MNIST training set and then predict the classes based on the network activities, observed on the test set with the corruption.
+It first fits a support-vector machine with the network activities on the N-MNIST training set and then predicts the classes based on the network activities, observed on the test set with the corruption.
 For each level of corruption strength, it creates one *.txt file, containing the accuracy score.
 Additionally, in each subdirectory in the *output_svm* directory, the image of a confusion matrix is created.
 
